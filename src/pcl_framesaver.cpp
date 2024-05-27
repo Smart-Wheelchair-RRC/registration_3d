@@ -24,7 +24,7 @@
 
 // THE MAIN
 	
-main(int	argc,	char**	argv) {	
+int main(int	argc,	char**	argv) {	
 
     ros::init(argc,	argv,	"pcl_framesaver");	
     std::cout << "PCL Framesaver - Save PointCloud2 topics into pcd files" << std::endl;

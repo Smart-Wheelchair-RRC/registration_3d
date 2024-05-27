@@ -13,8 +13,7 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
 #include <pcl/visualization/cloud_viewer.h>
-int
-main (int argc, char** argv)
+int main (int argc, char** argv)
 {
 
     if(argc < 1){

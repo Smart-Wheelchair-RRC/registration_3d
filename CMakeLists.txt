@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 2.8.3)
 project(registration_3d)
 
 
-add_compile_options(-std=c++11)
+add_compile_options(-std=c++14)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+## Compile as C++14, supported in ROS Kinetic and newer
+# add_compile_options(-std=c++14)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -227,6 +227,10 @@ ${PCL_LIBRARIES})
 #   # myfile2
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
+
+catkin_package(
+  CATKIN_DEPENDS pcl_conversions pcl_msgs pcl_ros roscpp rospy sensor_msgs std_msgs roslaunch
+)
 
 #############
 ## Testing ##
